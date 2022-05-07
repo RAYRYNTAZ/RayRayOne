@@ -68,7 +68,7 @@ for ($ia=0; $ia < $jumlah; $ia++) {
                 $getOTP = 0;
                 do {
                     $curl = new Curl();
-                    $curl->post('https://smshub.org/stubs/handler_api.php', 'action=getCurrentActivations&api_key='.$key.'&order=id&orderBy=asc&start=0&length=10');
+                    $curl->post('https://api.otpkita.com/api_handler.php', 'action=getCurrentActivations&api_key='.$key.'&order=id&orderBy=asc&start=0&length=10');
                     $otpBos = json_decode($curl->response)->array[0]->code;
                     $getOTP++;
                         if ($getOTP == 10) {
