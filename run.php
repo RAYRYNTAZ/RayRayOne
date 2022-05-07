@@ -35,7 +35,7 @@ for ($ia=0; $ia < $jumlah; $ia++) {
     $encodeIdentities = base64_encode('{"$identity_anonymous_id":"'.$identity_anonymous_id.'","$identity_cookie_id":"'.$identity_cookie_id.'"}');
     $encodeCookies = urlencode('sensorsdata2015jssdkcross={"distinct_id":"'.$identity_anonymous_id.'","first_id":"","props":{"$latest_traffic_source_type":"直接流量","$latest_search_keyword":"未取到值_直接打开","$latest_referrer":""},"identities":"'.$encodeIdentities.'","history_login_id":{"name":"","value":""},"$device_id":"'.$deviceId.'"}');
     $cookies = $encodeCookies.'; languageCode=in';
-
+}
     $no = $ia+1;
     echo '-----------------------------------------------------'.PHP_EOL;
     $getnum = $sms->getNumber('aj', '6', '0', 'any');
@@ -78,7 +78,7 @@ for ($ia=0; $ia < $jumlah; $ia++) {
                     }
                 }
             }
-                
+           }
 
 function RandomDeviceToken($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ-_:';
