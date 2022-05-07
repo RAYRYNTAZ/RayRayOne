@@ -96,3 +96,4 @@ function RandomUUID($length = 10) {
     }
     return $randomString;
 }
+}
