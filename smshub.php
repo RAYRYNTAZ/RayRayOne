@@ -2,7 +2,7 @@
 
 class SMSHub {
 
-    private $url = 'https://api.otpkita.com/api_handler.php?api_key=$api_key&action=account_info';
+    private $url = 'https://api.otpkita.com/api_handler.php';
 
     private $apiKey;
 
