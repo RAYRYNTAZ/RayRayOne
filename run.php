@@ -76,6 +76,8 @@ for ($ia=0; $ia < $jumlah; $ia++) {
                             $getOTP = 0;
                         }
                     }
+                }
+            }
                 
 
 function RandomDeviceToken($length = 10) {
